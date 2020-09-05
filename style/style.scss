@@ -314,6 +314,11 @@ button{
   border: none;
   height: 70%;
   border-radius: 35px 35px 35px 35px; 
+ 
+
+  @media (max-width: 768px) {
+    width: 85%;
+ }
 
 }
 
@@ -381,17 +386,26 @@ button{
 }
 
 .slick-prev {
-  color: red!important;
-  background: red!important;
-  z-index: 2!important;
+  
+  z-index: 1!important;
   left: 10% !important;
+
+  &:before{
+    content: "\2192";
+    color: grey!important;
+
+  }
 }
 
 .slick-next {
-  color: red!important;
-  background: red!important;
-  z-index: 2!important;
+
+  z-index: 1!important;
     left: 85%!important;
+    &:before{
+      content: "\2192";
+      color: grey!important;
+  
+    }
 }
 
 

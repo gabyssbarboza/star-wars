@@ -76,6 +76,8 @@ $('.screen-welcome').slick({
     infinite: true,
     slidesToShow: 1,
     arrows: false,
+    speed: 400,
+    autoplay: true,
     slidesToScroll: 1,
     dots: true
 
