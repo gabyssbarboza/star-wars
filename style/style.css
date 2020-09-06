@@ -101,7 +101,7 @@ header {
           justify-content: center;
   background-size: contain;
   height: 100%;
-  background: url(/images/ladodasestrelas.jpg);
+  background: url(/ladodasestrelas.jpg);
   background-size: 50% auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,7 +175,7 @@ header {
   -webkit-filter: opacity(0.5);
           filter: opacity(0.5);
   opacity: 0.1;
-  background: url(/images/estreladamorte.svg);
+  background: url(/estreladamorte.svg);
   background-repeat: no-repeat;
   background-position: -20% 0;
   -ms-background-size: cover;

@@ -199,11 +199,14 @@ var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() {
     modal.style.display = "none";
+    document.querySelector("body").style.overflow = 'auto';
   }
 
 
 
 async function chamarModal() {
+    document.querySelector("body").style.background = 'red';
+
     var modal = document.getElementById("myModal");
     var modalText = document.querySelector(".modal-text");
     modal.style.display = 'block';
