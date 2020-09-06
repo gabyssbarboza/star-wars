@@ -79,7 +79,7 @@ header {
 
 .choose-side {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,6 +136,7 @@ header {
   background: #3282B8;
   color: white;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 6em;
   border: none;
   border-radius: 40px 40px 40px 40px;
 }
@@ -201,8 +202,19 @@ header {
   background-color: #BE0C0C;
   color: white;
   border: none;
+  margin-bottom: 6em;
   font-family: 'Montserrat', sans-serif;
   border-radius: 40px 40px 40px 40px;
+}
+
+.republic-logo, .darth-logo {
+  margin-top: 9rem;
+}
+
+@media (max-width: 768px) {
+  .republic-logo, .darth-logo {
+    margin-top: 9rem;
+  }
 }
 
 .nav-bar {
@@ -350,7 +362,7 @@ header {
 .modal-content {
   background-color: #fefefe;
   margin: 10% auto;
-  padding: 20px;
+  padding: 3rem;
   border: 1px solid #888;
   width: 50%;
   height: 70%;
@@ -394,18 +406,36 @@ header {
   font-weight: bolder;
 }
 
-.screen-end div p {
+.screen-end div span {
   position: absolute;
   /* top: -1px; */
-  top: 25em;
+  top: 20em;
   z-index: 2;
+  /* opacity: 0.5; */
   background: #1B262C;
-  width: 286px;
+  width: 400px;
   padding: 3em;
+}
+
+.screen-end div span p {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.screen-end div span h4 {
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .slick-dotted.slick-slider {
   margin-bottom: 0px !important;
+}
+
+.slick-dots {
+  bottom: -65px !important;
 }
 
 .slick-initialized .slick-slide {
@@ -449,5 +479,19 @@ header {
 
 .slick-next, .slick-prev {
   top: 20% !important;
+}
+
+.modal-title {
+  font-size: 30px;
+  color: #707070;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1em;
+}
+
+.modal-text {
+  font-size: 20px;
+  color: #707070;
+  font-family: 'Montserrat', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
