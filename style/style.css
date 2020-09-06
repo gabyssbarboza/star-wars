@@ -3,6 +3,13 @@
   height: 2px;
 }
 
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}
+
 ::-webkit-scrollbar-button {
   width: 0px;
   height: 0px;
@@ -40,7 +47,7 @@
   background: transparent;
 }
 
-body, html, * {
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -374,7 +381,8 @@ header {
 
 @media (max-width: 768px) {
   .modal-content {
-    width: 85%;
+    overflow: auto;
+    max-width: 85%;
   }
 }
 
@@ -417,10 +425,30 @@ header {
   padding: 3em;
 }
 
+@media (max-width: 768px) {
+  .screen-end div span {
+    position: absolute;
+    /* top: -1px; */
+    top: 0em;
+    z-index: 2;
+    opacity: 0.5;
+    background: #1B262C;
+    width: 100px;
+    padding: 0em 2em;
+  }
+}
+
 .screen-end div span p {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .screen-end div span p {
+    margin: 0;
+    font-size: 14px;
+  }
 }
 
 .screen-end div span h4 {
@@ -428,6 +456,13 @@ header {
   font-size: 40px;
   color: white;
   font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .screen-end div span h4 {
+    margin: 0;
+    font-size: 14px;
+  }
 }
 
 .slick-dotted.slick-slider {

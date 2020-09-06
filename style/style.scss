@@ -8,6 +8,10 @@ $titles: #000;
 ::-webkit-scrollbar {
   width: 2px;
   height: 2px;
+  @media (max-width: 768px) {
+    width: 0px;
+    height: 0px;
+ }
 }
 ::-webkit-scrollbar-button {
   width: 0px;
@@ -39,7 +43,7 @@ $titles: #000;
   background: transparent;
 }
 
-body, html, *{
+body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -326,7 +330,10 @@ button{
  
 
   @media (max-width: 768px) {
-    width: 85%;
+    overflow: auto;
+    max-width: 85%;
+
+
  }
 
 }
@@ -370,11 +377,27 @@ button{
       background: #1B262C;
       width: 400px;
       padding: 3em;
+      @media (max-width: 768px) {
+        position: absolute;
+        /* top: -1px; */
+        top: 0em;
+        z-index: 2;
+        opacity: 0.5;
+        background: #1B262C;
+        width: 100px;
+        padding: 0em 2em;
+    
+     }
 
     p{
       font-size: 20px;
       font-family: 'Montserrat', sans-serif;
       color: white;
+      @media (max-width: 768px) {
+        margin: 0;
+        font-size: 14px;
+    
+     }
     }
 
     h4{
@@ -382,6 +405,11 @@ button{
       font-size: 40px;
       color: white;
       font-family: 'Montserrat', sans-serif;
+      @media (max-width: 768px) {
+        margin: 0;
+        font-size: 14px;
+    
+     }
     }
     }
   }

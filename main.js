@@ -183,6 +183,7 @@ personagens.forEach((item) => {
         var modalText = document.querySelector(".modal-text");
         var modalTitle = document.querySelector(".modal-title");
         modal.style.display = 'block';
+        document.querySelector("body").style.overflow = 'hidden';
         modalText.innerText = item.sobre;
         modalTitle.innerText = item.name;
 
@@ -204,40 +205,5 @@ span.onclick = function() {
 
 
 
-async function chamarModal() {
-    document.querySelector("body").style.background = 'red';
 
-    var modal = document.getElementById("myModal");
-    var modalText = document.querySelector(".modal-text");
-    modal.style.display = 'block';
-
-    // infos.forEach((item, index) => {
-    //     modalText.innerText = item[i];
-    // })
-
-    const url = `https://swapi.dev/api/people/${i}`;
-    const response = await fetch(url);
-    const body = await response.json();
-    console.log(body)
-    modalText.innerText = body.name;
-
-}
-
-
-
-
-// Array.from(caracters).forEach((item, index) => {
-
-
-//         for(var i = 0; i < caracters.length; i++){
-//             var modalText = document.querySelector(".modal-text");
-//             console.log(modalText)
-//             modalText.innerText = item.id;
-//         }
-
-//         item.id = index;
-//         item.addEventListener("click", event => {
-//             console.log("hi" + index)
-//         })
-// })
 
