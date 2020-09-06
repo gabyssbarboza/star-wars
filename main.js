@@ -77,7 +77,7 @@ $('.screen-welcome').slick({
     slidesToShow: 1,
     arrows: false,
     speed: 400,
-    autoplay: true,
+    // autoplay: true,
     slidesToScroll: 1,
     dots: true
 
@@ -129,41 +129,41 @@ const personagens =  [
     },
     {  "name": "Leia", 
         "img": "./personagens/leia.jpg",
-        "sobre": "lorem1"
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a efficitur lorem. Maecenas vehicula maximus quam nec congue. Aenean ipsum lectus, convallis ac libero in, porta porttitor libero. Maecenas accumsan a risus vel blandit. Duis feugiat convallis enim sed fringilla. Cras posuere venenatis ante ac congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rhoncus auctor justo non tempus. Sed ut bibendum nunc. Morbi sodales laoreet mauris, sed scelerisque ex rutrum quis. Ut eu nunc nisl."
     },
     {  "name": "Obi", 
         "img": "./personagens/obi.jpg",
-        "sobre": "lorem6"
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a efficitur lorem. Maecenas vehicula maximus quam nec congue. Aenean ipsum lectus, convallis ac libero in, porta porttitor libero. Maecenas accumsan a risus vel blandit. Duis feugiat convallis enim sed fringilla. Cras posuere venenatis ante ac congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rhoncus auctor justo non tempus. Sed ut bibendum nunc. Morbi sodales laoreet mauris, sed scelerisque ex rutrum quis. Ut eu nunc nisl."
     },
     {
         "name": "Solo", 
         "img": "./personagens/solo.jpg",
-        "sobre": "lorem3"
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a efficitur lorem. Maecenas vehicula maximus quam nec congue. Aenean ipsum lectus, convallis ac libero in, porta porttitor libero. Maecenas accumsan a risus vel blandit. Duis feugiat convallis enim sed fringilla. Cras posuere venenatis ante ac congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rhoncus auctor justo non tempus. Sed ut bibendum nunc. Morbi sodales laoreet mauris, sed scelerisque ex rutrum quis. Ut eu nunc nisl."
     },
     {
         "name": "Yoda", 
         "img": "./personagens/yoda.jpg",
-        "sobre": "lorem2"
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a efficitur lorem. Maecenas vehicula maximus quam nec congue. Aenean ipsum lectus, convallis ac libero in, porta porttitor libero. Maecenas accumsan a risus vel blandit. Duis feugiat convallis enim sed fringilla. Cras posuere venenatis ante ac congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rhoncus auctor justo non tempus. Sed ut bibendum nunc. Morbi sodales laoreet mauris, sed scelerisque ex rutrum quis. Ut eu nunc nisl."
     },
     {  
         "name": "Palpa", 
         "img": "./personagens/palpa.jpg",
-        "sobre": "lorem5"
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a efficitur lorem. Maecenas vehicula maximus quam nec congue. Aenean ipsum lectus, convallis ac libero in, porta porttitor libero. Maecenas accumsan a risus vel blandit. Duis feugiat convallis enim sed fringilla. Cras posuere venenatis ante ac congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rhoncus auctor justo non tempus. Sed ut bibendum nunc. Morbi sodales laoreet mauris, sed scelerisque ex rutrum quis. Ut eu nunc nisl."
     },
     {
         "name": "Sith", 
         "img": "./personagens/sith.jpg",
-        "sobre": "lorem4"
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a efficitur lorem. Maecenas vehicula maximus quam nec congue. Aenean ipsum lectus, convallis ac libero in, porta porttitor libero. Maecenas accumsan a risus vel blandit. Duis feugiat convallis enim sed fringilla. Cras posuere venenatis ante ac congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rhoncus auctor justo non tempus. Sed ut bibendum nunc. Morbi sodales laoreet mauris, sed scelerisque ex rutrum quis. Ut eu nunc nisl."
     },
     {
         "name": "Soldier", 
         "img": "./personagens/soldier.jpg",
-        "sobre": "lorem1"
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a efficitur lorem. Maecenas vehicula maximus quam nec congue. Aenean ipsum lectus, convallis ac libero in, porta porttitor libero. Maecenas accumsan a risus vel blandit. Duis feugiat convallis enim sed fringilla. Cras posuere venenatis ante ac congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rhoncus auctor justo non tempus. Sed ut bibendum nunc. Morbi sodales laoreet mauris, sed scelerisque ex rutrum quis. Ut eu nunc nisl."
     },
     {
         "name": "Darth", 
         "img": "./personagens/darth.jpg",
-        "sobre": "lorem1"
+        "sobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a efficitur lorem. Maecenas vehicula maximus quam nec congue. Aenean ipsum lectus, convallis ac libero in, porta porttitor libero. Maecenas accumsan a risus vel blandit. Duis feugiat convallis enim sed fringilla. Cras posuere venenatis ante ac congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rhoncus auctor justo non tempus. Sed ut bibendum nunc. Morbi sodales laoreet mauris, sed scelerisque ex rutrum quis. Ut eu nunc nisl."
     },
    
 ]
