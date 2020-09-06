@@ -79,7 +79,7 @@ header {
 
 .choose-side {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +101,7 @@ header {
           justify-content: center;
   background-size: contain;
   height: 100%;
-  background: url(/ladodasestrelas.jpg);
+  background: url(/images/ladodasestrelas.jpg);
   background-size: 50% auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,7 +136,6 @@ header {
   background: #3282B8;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 6em;
   border: none;
   border-radius: 40px 40px 40px 40px;
 }
@@ -175,7 +174,7 @@ header {
   -webkit-filter: opacity(0.5);
           filter: opacity(0.5);
   opacity: 0.1;
-  background: url(/estreladamorte.svg);
+  background: url(/images/estreladamorte.svg);
   background-repeat: no-repeat;
   background-position: -20% 0;
   -ms-background-size: cover;
@@ -202,19 +201,8 @@ header {
   background-color: #BE0C0C;
   color: white;
   border: none;
-  margin-bottom: 6em;
   font-family: 'Montserrat', sans-serif;
   border-radius: 40px 40px 40px 40px;
-}
-
-.republic-logo, .darth-logo {
-  margin-top: 9rem;
-}
-
-@media (max-width: 768px) {
-  .republic-logo, .darth-logo {
-    margin-top: 3rem;
-  }
 }
 
 .nav-bar {
@@ -362,7 +350,7 @@ header {
 .modal-content {
   background-color: #fefefe;
   margin: 10% auto;
-  padding: 3rem;
+  padding: 20px;
   border: 1px solid #888;
   width: 50%;
   height: 70%;
@@ -406,36 +394,18 @@ header {
   font-weight: bolder;
 }
 
-.screen-end div span {
+.screen-end div p {
   position: absolute;
   /* top: -1px; */
-  top: 20em;
+  top: 25em;
   z-index: 2;
-  /* opacity: 0.5; */
   background: #1B262C;
-  width: 400px;
+  width: 286px;
   padding: 3em;
-}
-
-.screen-end div span p {
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-}
-
-.screen-end div span h4 {
-  font-weight: bold;
-  font-size: 40px;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .slick-dotted.slick-slider {
   margin-bottom: 0px !important;
-}
-
-.slick-dots {
-  bottom: -65px !important;
 }
 
 .slick-initialized .slick-slide {
@@ -479,19 +449,5 @@ header {
 
 .slick-next, .slick-prev {
   top: 20% !important;
-}
-
-.modal-title {
-  font-size: 30px;
-  color: #707070;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 1em;
-}
-
-.modal-text {
-  font-size: 20px;
-  color: #707070;
-  font-family: 'Montserrat', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
