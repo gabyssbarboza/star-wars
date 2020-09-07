@@ -77,7 +77,7 @@ $('.screen-welcome').slick({
     slidesToShow: 1,
     arrows: false,
     speed: 400,
-    // autoplay: true,
+    autoplay: true,
     slidesToScroll: 1,
     dots: true
 

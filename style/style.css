@@ -242,7 +242,7 @@ header {
 @media (max-width: 768px) {
   .republic-logo,
   .darth-logo {
-    margin-top: 9rem;
+    margin-top: 3rem;
   }
 }
 
@@ -273,6 +273,7 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0;
+    height: 95px;
   }
 }
 
@@ -304,6 +305,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    padding: 0;
+  }
 }
 
 .nav-list li {
@@ -346,6 +353,12 @@ header {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .slick-dots:nth-child(1) {
+    top: 60%;
+  }
+}
+
 #personagens {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,6 +378,12 @@ header {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  #personagens {
+    padding: 5em 4em;
+  }
+}
+
 #personagens img {
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
@@ -375,6 +394,7 @@ header {
   transition: all .4s linear;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  cursor: pointer;
 }
 
 /* The Modal (background) */
@@ -508,6 +528,12 @@ header {
   bottom: -65px !important;
 }
 
+@media (max-width: 768px) {
+  .slick-dots {
+    bottom: -15px !important;
+  }
+}
+
 .slick-initialized .slick-slide {
   display: block;
 }
@@ -534,7 +560,7 @@ header {
 
 .slick-prev:before {
   content: "\2192";
-  color: grey !important;
+  color: #a39f9f !important;
 }
 
 .slick-next {
@@ -544,12 +570,12 @@ header {
 
 .slick-next:before {
   content: "\2192";
-  color: grey !important;
+  color: #a39f9f !important;
 }
 
 .slick-next,
 .slick-prev {
-  top: 20% !important;
+  top: 40% !important;
 }
 
 .modal-title {
@@ -558,11 +584,33 @@ header {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1em;
+  margin: 0;
 }
 
 .modal-text {
   font-size: 20px;
   color: #707070;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+  height: 40px;
+  text-align: center;
+  background-color: #1B262C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer p {
+  color: white;
+  margin: 1em 0em;
   font-family: 'Montserrat', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

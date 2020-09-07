@@ -242,11 +242,13 @@ header {
   margin-top: 9rem;
 
   @media (max-width: 768px) {
-    margin-top: 9rem;
+    margin-top: 3rem;
   }
 }
 
 .nav {
+
+ 
 
 
   &-bar {
@@ -264,6 +266,7 @@ header {
     @media (max-width: 768px) {
       flex-direction: column;
       padding: 0;
+      height: 95px;
     }
 
 
@@ -286,6 +289,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    @media (max-width: 768px) {
+      padding:0;
+    }
 
     li {
       font-size: 1.25rem;
@@ -324,6 +330,15 @@ header {
   height: 91px;
   list-style: none;
   text-align: center;
+
+  &:nth-child(1){
+    @media (max-width: 768px) {
+      top: 60%;
+    }
+  
+   
+  }
+
 }
 
 #personagens {
@@ -333,6 +348,11 @@ header {
   align-items: center;
   padding: 10em 4em;
   justify-content: center;
+  @media (max-width: 768px) {
+    padding: 5em 4em;
+  }
+
+ 
 
   img{
 
@@ -340,6 +360,7 @@ header {
     &:hover{
      transition:  all .4s linear;
      filter: grayscale(100%);
+     cursor: pointer;
     }
   }
 }
@@ -478,6 +499,9 @@ header {
 
 .slick-dots {
   bottom: -65px !important;
+  @media (max-width: 768px) {
+    bottom: -15px !important;
+  }
 
 }
 
@@ -504,7 +528,7 @@ header {
 
   &:before {
     content: "\2192";
-    color: grey !important;
+    color: rgb(163, 159, 159) !important;
 
   }
 }
@@ -516,7 +540,7 @@ header {
 
   &:before {
     content: "\2192";
-    color: grey !important;
+    color: rgb(163, 159, 159) !important;
 
   }
 }
@@ -524,7 +548,7 @@ header {
 
 .slick-next,
 .slick-prev {
-  top: 20% !important;
+  top: 40% !important;
 }
 
 .modal {
@@ -536,6 +560,7 @@ header {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 1em;
+    margin: 0;
   }
 
   &-text {
@@ -543,5 +568,20 @@ header {
     color: #707070;
     font-family: 'Montserrat', sans-serif;
 
+  }
+}
+
+.footer{
+  height: 40px;
+  text-align: center;
+  background-color: #1B262C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p{
+    color: white;
+    margin: 1em 0em;
+    font-family: 'Montserrat', sans-serif;
   }
 }
