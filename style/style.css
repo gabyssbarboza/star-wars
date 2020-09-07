@@ -526,11 +526,12 @@ header {
 
 .slick-dots {
   bottom: -65px !important;
+  height: 30px !important;
 }
 
 @media (max-width: 768px) {
   .slick-dots {
-    bottom: -15px !important;
+    bottom: 40px !important;
   }
 }
 
@@ -612,5 +613,11 @@ header {
   color: white;
   margin: 1em 0em;
   font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+  main#planetas {
+    height: 38vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
