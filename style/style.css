@@ -57,7 +57,7 @@ body {
 
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   background: white;
   width: 100%;
 }
@@ -108,7 +108,7 @@ header {
           justify-content: center;
   background-size: contain;
   height: 100%;
-  background: url(/images/ladodasestrelas.jpg);
+  background: url(../images/ladodasestrelas.jpg);
   background-size: 50% auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,6 +146,15 @@ header {
   margin-bottom: 6em;
   border: none;
   border-radius: 40px 40px 40px 40px;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.choose-left button:hover {
+  cursor: pointer;
+  background: #226999;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
 }
 
 .choose-rigth {
@@ -182,7 +191,7 @@ header {
   -webkit-filter: opacity(0.5);
           filter: opacity(0.5);
   opacity: 0.1;
-  background: url(/images/estreladamorte.svg);
+  background: url(../images/estreladamorte.svg);
   background-repeat: no-repeat;
   background-position: -20% 0;
   -ms-background-size: cover;
@@ -209,17 +218,30 @@ header {
   background-color: #BE0C0C;
   color: white;
   border: none;
+  position: relative;
+  z-index: 2;
   margin-bottom: 6em;
   font-family: 'Montserrat', sans-serif;
   border-radius: 40px 40px 40px 40px;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
 }
 
-.republic-logo, .darth-logo {
+.choose-rigth button:hover {
+  cursor: pointer;
+  background-color: #850505;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.republic-logo,
+.darth-logo {
   margin-top: 9rem;
 }
 
 @media (max-width: 768px) {
-  .republic-logo, .darth-logo {
+  .republic-logo,
+  .darth-logo {
     margin-top: 9rem;
   }
 }
@@ -343,6 +365,18 @@ header {
           justify-content: center;
 }
 
+#personagens img {
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+#personagens img:hover {
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -447,7 +481,7 @@ header {
 @media (max-width: 768px) {
   .screen-end div span p {
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -455,6 +489,7 @@ header {
   font-weight: bold;
   font-size: 40px;
   color: white;
+  margin: 0em;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -512,7 +547,8 @@ header {
   color: grey !important;
 }
 
-.slick-next, .slick-prev {
+.slick-next,
+.slick-prev {
   top: 20% !important;
 }
 

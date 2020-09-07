@@ -8,124 +8,144 @@ $titles: #000;
 ::-webkit-scrollbar {
   width: 2px;
   height: 2px;
+
   @media (max-width: 768px) {
     width: 0px;
     height: 0px;
- }
+  }
 }
+
 ::-webkit-scrollbar-button {
   width: 0px;
   height: 0px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #e1e1e1;
   border: 0px none #ffffff;
   border-radius: 50px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #ffffff;
 }
+
 ::-webkit-scrollbar-thumb:active {
   background: #000000;
 }
+
 ::-webkit-scrollbar-track {
   background: #000000;
   border: 0px none #ffffff;
   border-radius: 50px;
 }
+
 ::-webkit-scrollbar-track:hover {
   background: #000000;
 }
+
 ::-webkit-scrollbar-track:active {
   background: #000000;
 }
+
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    box-sizing: border-box;
-   
-}
-
-
-header{
-    position: fixed;
-    z-index: 2;
-    background: white;
-    width: 100%;
-    @media (max-width: 768px) {
-      position: inherit;
-   }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
 
 }
 
-.screen-welcome{
+
+header {
+  position: fixed;
+  z-index: 3;
+  background: white;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    position: inherit;
+  }
+
+}
+
+.screen-welcome {
   height: 100vh;
   overflow: hidden;
   width: 100%;
+
   @media (max-width: 768px) {
     height: 45vh;
+  }
+
+
+  img {
+    max-width: 100%;
+  }
 }
 
 
-img{
-  max-width: 100%;
-}
-}
+.choose {
 
+  &-side {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
 
-.choose{
-
-  &-side{
-      width: 100%;
+    @media (max-width: 768px) {
       height: 100%;
-      display: flex;
-      flex-direction: row;
+    }
+  }
+
+  &-left {
+    justify-content: center;
+    background-size: contain;
+    height: 100%;
+    background: url(../images/ladodasestrelas.jpg);
+    background-size: 50% auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 22px;
+      width: 80%;
+      text-align: center;
+      margin-bottom: 74px;
+
       @media (max-width: 768px) {
-        height: 100%;
-     }
+        margin-bottom: 24px;
+      }
+    }
+
+    button {
+      width: 273px;
+      height: 60px;
+      background: #3282B8;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+
+      margin-bottom: 6em;
+      border: none;
+      border-radius: 40px 40px 40px 40px;
+      transition: all .5s linear;
+
+      &:hover {
+        cursor: pointer;
+        background: #226999;
+        transition: all .5s linear;
+      }
+    }
+
   }
 
-  &-left{
-    justify-content: center;  
-      background-size:  contain;
-      height: 100%;
-      background: url(/images/ladodasestrelas.jpg);
-      background-size: 50% auto;
-      display: flex;
-      flex-direction: column;
-     width: 50%;
-      align-items: center;
-
-      p{
-        font-family: 'Montserrat', sans-serif;
-        line-height: 22px;
-        width: 80%;
-    text-align: center;
-        margin-bottom: 74px;
-        @media (max-width: 768px) {
-          margin-bottom: 24px;
-       }
-      }
-
-      button{
-        width: 273px;
-        height: 60px;
-        background: #3282B8;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-
-        margin-bottom: 6em;
-        border: none;
-        border-radius: 40px 40px 40px 40px;
-      }
-
-  }
-  
   // &-rigth{
   //   width: 50%;
   //   background: url(/images/estreladamorte.svg);
@@ -133,149 +153,165 @@ img{
   //   background-repeat: no-repeat;
   // }
 
-  
-&-rigth{
-  position: relative;
-  background: #ffffff;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 
-/* You could use :after - it doesn't really matter */
-&::after {
-  // content: ' ';
-  // display: block;
-  // position: absolute;
-  // left: 0;
-  // top: 0;
-  // width: 100%;
-  // height: 100%;
-  // z-index: 1;
-  // opacity: 0.1;
-  // background: url(/images/estreladamorte.svg);
-  // background-repeat: no-repeat;
-  // background-position: 50% 0;
-  // -ms-background-size: cover;
-  // -o-background-size: cover;
-  // -moz-background-size: cover;
-  // -webkit-background-size: cover;
-  // background-size: cover;
-  content: ' ';
-  display: block;
-  position: absolute;
-  /* left: 21em; */
-  top: 3em;
-  width: 100%;
-  height: 115%;
-  z-index: 1;
-  filter: opacity(0.5);
-  opacity: 0.1;
-  background: url(/images/estreladamorte.svg);
-  background-repeat: no-repeat;
-  background-position: -20% 0;
-  -ms-background-size: cover;
-  background-size: 135%;
+  &-rigth {
+    position: relative;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 
-}
+    /* You could use :after - it doesn't really matter */
+    &::after {
+      // content: ' ';
+      // display: block;
+      // position: absolute;
+      // left: 0;
+      // top: 0;
+      // width: 100%;
+      // height: 100%;
+      // z-index: 1;
+      // opacity: 0.1;
+      // background: url(/images/estreladamorte.svg);
+      // background-repeat: no-repeat;
+      // background-position: 50% 0;
+      // -ms-background-size: cover;
+      // -o-background-size: cover;
+      // -moz-background-size: cover;
+      // -webkit-background-size: cover;
+      // background-size: cover;
+      content: ' ';
+      display: block;
+      position: absolute;
+      /* left: 21em; */
+      top: 3em;
+      width: 100%;
+      height: 115%;
+      z-index: 1;
+      filter: opacity(0.5);
+      opacity: 0.1;
+      background: url(../images/estreladamorte.svg);
+      background-repeat: no-repeat;
+      background-position: -20% 0;
+      -ms-background-size: cover;
+      background-size: 135%;
 
-p{
-  font-family: 'Montserrat', sans-serif;
-  line-height: 22px;
-  width: 80%;
-  text-align: center;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 22px;
+      width: 80%;
+      text-align: center;
       margin-bottom: 74px;
+
       @media (max-width: 768px) {
         margin-bottom: 24px;
-     }
+      }
+    }
+
+    button {
+      width: 273px;
+      height: 60px;
+      background-color: #BE0C0C;
+      color: white;
+      border: none;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 6em;
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 40px 40px 40px 40px;
+      transition: all .5s linear;
+
+      &:hover{
+        cursor: pointer;
+        background-color: rgb(133, 5, 5);
+        transition: all .5s linear;
+      }
+    }
+  }
 }
 
-button{
-  width: 273px;
-  height: 60px;
-  background-color: #BE0C0C;
-  color: white;
-  border: none;
-  margin-bottom: 6em;
-  font-family: 'Montserrat', sans-serif;
 
-  border-radius: 40px 40px 40px 40px;
-}
-}
-}
-
-
-.republic-logo, .darth-logo{
+.republic-logo,
+.darth-logo {
   margin-top: 9rem;
+
   @media (max-width: 768px) {
     margin-top: 9rem;
- }
+  }
 }
 
-.nav{
+.nav {
 
 
-    &-bar{
-        top: 0;
-        display: flex;
-  padding: 0;
+  &-bar {
+    top: 0;
+    display: flex;
+    padding: 0;
 
-        flex-direction: row;
-        align-items: center;
-        height: 80px;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
     padding: 0 0 0 1rem;
     overflow: hidden;
     box-shadow: 0px 3px 4px -5px rgba(0, 0, 0, 0.5);
-    @media (max-width: 768px) {
-        flex-direction: column;
-        padding: 0;
-    }
-    
 
-    img{
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 0;
+    }
+
+
+    img {
       max-width: 100%;
       height: 65px;
+
       @media (max-width: 768px) {
-       height: auto;
-       width: 100px;
-    }
-  
-    }
-    }
-    &-list{
-        display: flex;
-        list-style: none;
-        overflow-x: hidden;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        height: auto;
+        width: 100px;
+      }
 
-        li{
-            font-size: 1.25rem;
-            color: #B9B9B9;
-            font-family: 'Bebas Neue', cursive;
-            text-transform: uppercase;
-            margin: auto 2em;
-            @media (max-width: 768px) {
-              font-size: 1em;
-              margin: auto 1em;
-           }
+    }
+  }
 
-            a{
-                color: $details;
-                text-decoration: none;
-                transition: all linear .3s;
-                &:hover{
-                    color: black;
-                    transition: all linear .3s;
-                }
-            }
-        
+  &-list {
+    display: flex;
+    list-style: none;
+    overflow-x: hidden;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      font-size: 1.25rem;
+      color: #B9B9B9;
+      font-family: 'Bebas Neue', cursive;
+      text-transform: uppercase;
+      margin: auto 2em;
+
+      @media (max-width: 768px) {
+        font-size: 1em;
+        margin: auto 1em;
+      }
+
+      a {
+        color: $details;
+        text-decoration: none;
+        transition: all linear .3s;
+
+        &:hover {
+          color: black;
+          transition: all linear .3s;
         }
+      }
+
     }
+  }
 }
 
 .slick-dots {
@@ -296,23 +332,39 @@ button{
   flex-wrap: wrap;
   align-items: center;
   padding: 10em 4em;
-
   justify-content: center;
+
+  img{
+
+    transition:  all .4s linear;
+    &:hover{
+     transition:  all .4s linear;
+     filter: grayscale(100%);
+    }
+  }
 }
 
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: hidden; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -326,15 +378,15 @@ button{
   overflow: hidden;
   border: none;
   height: 70%;
-  border-radius: 35px 35px 35px 35px; 
- 
+  border-radius: 35px 35px 35px 35px;
+
 
   @media (max-width: 768px) {
     overflow: auto;
     max-width: 85%;
 
 
- }
+  }
 
 }
 
@@ -352,14 +404,14 @@ button{
   cursor: pointer;
 }
 
-.title-republic{
+.title-republic {
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   color: #707070;
   font-weight: bolder;
 }
 
-.title-imperie{
+.title-imperie {
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   color: #707070;
@@ -367,8 +419,8 @@ button{
 }
 
 .screen-end {
-  div{
-    span{
+  div {
+    span {
       position: absolute;
       /* top: -1px; */
       top: 20em;
@@ -377,6 +429,7 @@ button{
       background: #1B262C;
       width: 400px;
       padding: 3em;
+
       @media (max-width: 768px) {
         position: absolute;
         /* top: -1px; */
@@ -386,42 +439,45 @@ button{
         background: #1B262C;
         width: 100px;
         padding: 0em 2em;
-    
-     }
 
-    p{
-      font-size: 20px;
-      font-family: 'Montserrat', sans-serif;
-      color: white;
-      @media (max-width: 768px) {
-        margin: 0;
-        font-size: 14px;
-    
-     }
-    }
+      }
 
-    h4{
-      font-weight: bold;
-      font-size: 40px;
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      @media (max-width: 768px) {
-        margin: 0;
-        font-size: 14px;
-    
-     }
-    }
+      p {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+
+        @media (max-width: 768px) {
+          margin: 0;
+          font-size: 12px;
+
+        }
+      }
+
+      h4 {
+        font-weight: bold;
+        font-size: 40px;
+        color: white;
+    margin: 0em;
+        font-family: 'Montserrat', sans-serif;
+
+        @media (max-width: 768px) {
+          margin: 0;
+          font-size: 14px;
+
+        }
+      }
     }
   }
 }
 
 .slick-dotted.slick-slider {
-  margin-bottom: 0px!important; 
+  margin-bottom: 0px !important;
 }
 
 
-.slick-dots{
-  bottom: -65px!important;
+.slick-dots {
+  bottom: -65px !important;
 
 }
 
@@ -430,49 +486,51 @@ button{
 
   @media (max-width: 768px) {
     overflow: hidden;
-    display: flex!important;
- }
+    display: flex !important;
+  }
 }
 
 .slick-slider {
- 
+
   @media (max-width: 768px) {
     overflow: hidden;
- }
+  }
 }
 
 .slick-prev {
-  
-  z-index: 1!important;
+
+  z-index: 1 !important;
   left: 10% !important;
 
-  &:before{
+  &:before {
     content: "\2192";
-    color: grey!important;
+    color: grey !important;
 
   }
 }
 
 .slick-next {
 
-  z-index: 1!important;
-    left: 85%!important;
-    &:before{
-      content: "\2192";
-      color: grey!important;
-  
-    }
+  z-index: 1 !important;
+  left: 85% !important;
+
+  &:before {
+    content: "\2192";
+    color: grey !important;
+
+  }
 }
 
 
-.slick-next, .slick-prev{
-  top: 20%!important;
+.slick-next,
+.slick-prev {
+  top: 20% !important;
 }
 
 .modal {
 
 
-  &-title{
+  &-title {
     font-size: 30px;
     color: #707070;
     font-weight: bold;
@@ -480,7 +538,7 @@ button{
     margin-bottom: 1em;
   }
 
-  &-text{
+  &-text {
     font-size: 20px;
     color: #707070;
     font-family: 'Montserrat', sans-serif;
